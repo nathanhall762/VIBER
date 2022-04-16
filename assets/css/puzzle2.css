@@ -90,3 +90,6 @@ button::-moz-focus-inner {
 #solve:hover, #solve.gameSolved {
   opacity: 1;
 }
+.wrapper {
+    margin: 24px;
+}
