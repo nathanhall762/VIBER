@@ -215,3 +215,19 @@ function shuffle(a) {
     }
     return a;
 }
+
+function pickPuzzle() {
+    var choice = $('#picker').find(':selected').text()
+
+    if (choice == "Magic Square") {
+      $('#magic').css("display", "block");
+      $('#words').css("display", "none");
+    } else if (choice == "Word search") {
+      $('#magic').css("display", "none");
+      $('#words').css("display", "block");
+    } else {
+      $('#magic').css("display", "none");
+      $('#words').css("display", "none");
+    }
+  }
+  

@@ -48,54 +48,63 @@
 										<h1 id="puzzleh1">Puzzle</h1>
 									</header>
 									<p>Pick a puzzle to solve while timed.</p>
-									<div class="welcome"><h2>Magic Square(4x4) Puzzle</h2></div>
-									<div><h2><span id="first"></span></h2></div>
-									<div><h2><span id="second"></span></h2></div>
-									<table id="puzzletable" oninput="check()">
-										<tr id="zero_row">
-											<td></td>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td id="tot5"></td>
-										</tr>
-										  <tr id="first_row">
-											<td><input type="number" min="1" max="16" maxlength=2 id="r1c1" autocomplete="off"></td>
-											<td><input type="number" min="1" max="16" maxlength=2 id="r1c2" autocomplete="off"></td>
-											<td><input type="number" min="1" max="16" maxlength=2 id="r1c3" autocomplete="off"></td>
-											<td><input type="number" min="1" max="16" maxlength=2 id="r1c4" autocomplete="off"></td>
-											<td id="tot6"></td>
-										  </tr>
-										  <tr id="second_row">
-											<td><input type="number" min="1" max="16" maxlength=2 id="r2c1" autocomplete="off"></td>
-											<td><input type="number" min="1" max="16" maxlength=2 id="r2c2" autocomplete="off"></td>
-											<td><input type="number" min="1" max="16" maxlength=2 id="r2c3" autocomplete="off"></td>
-											<td><input type="number" min="1" max="16" maxlength=2 id="r2c4" autocomplete="off"></td>
-											<td id="tot7"></td>
-										  </tr>
-										  <tr id="third_row">
-											<td><input type="number" min="1" max="16" maxlength=2 id="r3c1" autocomplete="off"></td>
-											<td><input type="number" min="1" max="16" maxlength=2 id="r3c2" autocomplete="off"></td>
-											<td><input type="number" min="1" max="16" maxlength=2 id="r3c3" autocomplete="off"></td>
-											<td><input type="number" min="1" max="16" maxlength=2 id="r3c4" autocomplete="off"></td>
-											<td id="tot8"></td>
-										  </tr>
-										  <tr id="fourth_row">
-											<td><input type="number" min="1" max="16" maxlength=2 id="r4c1" autocomplete="off"></td>
-											<td><input type="number" min="1" max="16" maxlength=2 id="r4c2" autocomplete="off"></td>
-											<td><input type="number" min="1" max="16" maxlength=2 id="r4c3" autocomplete="off"></td>
-											<td><input type="number" min="1" max="16" maxlength=2 id="r4c4" autocomplete="off"></td>
-											<td id="tot9"></td>
-										  </tr>
-										<tr id="vtot_row">
-											<td id="tot0"></td>
-											<td id="tot1"></td>
-											<td id="tot2"></td>
-											<td id="tot3"></td>
-											<td id="tot4"></td>
-										</tr>
-										</table>
-										<div id="demo"><h2></h2></div>
+									<select id="picker" onchange="pickPuzzle()">
+										<option>Pick a Puzzle</option>
+										<option>Magic Square</option>
+										<option>Word search</option>
+									</select>
+									<div id="magic" style="display:none;">
+										<div class="welcome"><h2>Magic Square(4x4) Puzzle</h2></div>
+										<div><h2><span id="first"></span></h2></div>
+										<div><h2><span id="second"></span></h2></div>
+										<table id="puzzletable" oninput="check()">
+											<tr id="zero_row">
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td id="tot5"></td>
+											</tr>
+											  <tr id="first_row">
+												<td><input type="number" min="1" max="16" maxlength=2 id="r1c1" autocomplete="off"></td>
+												<td><input type="number" min="1" max="16" maxlength=2 id="r1c2" autocomplete="off"></td>
+												<td><input type="number" min="1" max="16" maxlength=2 id="r1c3" autocomplete="off"></td>
+												<td><input type="number" min="1" max="16" maxlength=2 id="r1c4" autocomplete="off"></td>
+												<td id="tot6"></td>
+											  </tr>
+											  <tr id="second_row">
+												<td><input type="number" min="1" max="16" maxlength=2 id="r2c1" autocomplete="off"></td>
+												<td><input type="number" min="1" max="16" maxlength=2 id="r2c2" autocomplete="off"></td>
+												<td><input type="number" min="1" max="16" maxlength=2 id="r2c3" autocomplete="off"></td>
+												<td><input type="number" min="1" max="16" maxlength=2 id="r2c4" autocomplete="off"></td>
+												<td id="tot7"></td>
+											  </tr>
+											  <tr id="third_row">
+												<td><input type="number" min="1" max="16" maxlength=2 id="r3c1" autocomplete="off"></td>
+												<td><input type="number" min="1" max="16" maxlength=2 id="r3c2" autocomplete="off"></td>
+												<td><input type="number" min="1" max="16" maxlength=2 id="r3c3" autocomplete="off"></td>
+												<td><input type="number" min="1" max="16" maxlength=2 id="r3c4" autocomplete="off"></td>
+												<td id="tot8"></td>
+											  </tr>
+											  <tr id="fourth_row">
+												<td><input type="number" min="1" max="16" maxlength=2 id="r4c1" autocomplete="off"></td>
+												<td><input type="number" min="1" max="16" maxlength=2 id="r4c2" autocomplete="off"></td>
+												<td><input type="number" min="1" max="16" maxlength=2 id="r4c3" autocomplete="off"></td>
+												<td><input type="number" min="1" max="16" maxlength=2 id="r4c4" autocomplete="off"></td>
+												<td id="tot9"></td>
+											  </tr>
+											<tr id="vtot_row">
+												<td id="tot0"></td>
+												<td id="tot1"></td>
+												<td id="tot2"></td>
+												<td id="tot3"></td>
+												<td id="tot4"></td>
+											</tr>
+											</table>
+											<div id="demo"><h2></h2></div>
+									</div>
+								</div>
+								<div id="words" style="display:none;">
 								</div>
 							</section>
 					</div>
@@ -116,7 +125,6 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/puzzle.js"></script>
 			<script src="assets/js/wordsearch.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
 
 	</body>
 </html>
