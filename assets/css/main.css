@@ -70,6 +70,8 @@ input, select, textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+	padding-bottom: 20;
+	padding-top: 5;
 }
 
 /* Basic */
