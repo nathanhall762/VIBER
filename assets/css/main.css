@@ -1955,8 +1955,8 @@ input, select, textarea {
 		height: 2.75em;
 		padding-right: 2.75em;
 		text-overflow: ellipsis;
-		padding-bottom: 20;
-		padding-top: 5;
+		padding-bottom: 20px;
+		padding-top: 5px;
 	}
 
 		select option {
