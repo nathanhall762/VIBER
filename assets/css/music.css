@@ -20,3 +20,15 @@ background: #AAAAAA;
 .tile7 {background-position: left bottom;}
 .tile8 {background-position: center bottom;}
 .tile9 {background: white; cursor: default;}
+
+.audio {
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
