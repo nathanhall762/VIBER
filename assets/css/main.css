@@ -29,10 +29,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-#matchpic {
-	padding-bottom: 20px;
-	padding-top: 5px;
-}
+
 
 body {
 	line-height: 1;
@@ -1960,6 +1957,8 @@ input, select, textarea {
 		height: 2.75em;
 		padding-right: 2.75em;
 		text-overflow: ellipsis;
+		margin-bottom: 20px;
+		margin-top: 5px;
 	}
 
 		select option {
