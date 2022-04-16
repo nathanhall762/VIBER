@@ -1,0 +1,70 @@
+body {
+  background-color: #ded7a9;
+  background-repeat: none;
+  background-size: cover;
+  color: #000;
+  text-align: left;
+}
+text {
+  background-color:#ccccff;
+}
+h1 {
+  font-size: 2.6rem;
+  background-color:#ccccff;
+}
+table {
+  float: right;
+  margin: auto;
+  border-collapse: collapse;
+}
+td {
+  width: 6rem;
+  height: 6rem;
+}
+input {
+  width:3rem;
+  height:3rem;
+  background-color:#ccccff;
+  outline:none;
+  box-shadow:none;
+  border:none;
+  color: blue;
+  font-weight:bold;
+  font-size:2rem;
+  text-align:center;
+}
+input [type=action]{
+  font-size: 0.5rem;
+  width: 6rem;
+  height: 3rem;
+}
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden --> */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+/*input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}*/
+input:out-of-range {
+  background-color: #000000;
+}
+@media screen and (max-width:500px) {
+  h1 {
+  font-size:1.5rem;
+  }
+  td {
+  width: 3rem;
+  height: 3rem;
+  }
+  input {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.2rem;
+}
